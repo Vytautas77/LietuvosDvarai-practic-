@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styledvr.css">
+    <link rel="stylesheet" href="./inputStyle.css">
+</head>
+<body>
+    <header>
+        <div ><a class="logo" href="./index.html">Lietuvos dvarai</a></div>
+        <ul class="navBar">
+            <li><a class="navBarLink" href="#">Kontaktai</a></li>
+        </ul>
+    </header>
+
+    <main class="InputMain">
+        <input type="text" class="InputTitle" id="InputTitle" placeholder="Dvaro pavadinimas"/>
+        <input type="text" class="inputHistory" id="inputHistory" placeholder="Dvaro istorija"/>
+        <input type="text" class="inputAddress" id="inputAddress" placeholder="Dvaro adresas"/>
+        <input type="text" class="inputImg" id="inputImg" placeholder="Nuotraukos adresas"/>
+        <button id="btn" class="btn">Įkelti</button>
+        <div class="responseWrapper" id="responseWrapper"></div>
+    </main>
+
+    <script src="./inputScript.js"></script>
+</body>
+</html>

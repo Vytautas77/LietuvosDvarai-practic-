@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+}
+header{
+    width: auto;
+    height: 4rem;
+    background-color: rgba(232, 181, 117, 0.853);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    padding-left: 3rem;
+    color: rgba(0, 0, 0, 0.836);
+    font-size: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 1px 2px 5px rgb(62, 59, 59);
+}
+.logo:hover{
+    color: rgba(88, 74, 74, 0.836);
+}
+.navBar{
+    display: flex;
+    gap: 1rem;
+    padding-right: 3rem;
+    list-style: none;
+}
+.navBarLink{
+    border: 1px solid black;
+    padding: 5px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+.navBarLink:hover{
+    color: #173988;
+    background-color: rgba(232, 180, 117, 0.451);
+}
+.dvaruWrapper{
+    margin: 0.2rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.dvrWrapper{
+    display: flex;
+    flex-direction: column;
+width: 100%;
+height: auto;
+background-color: rgba(232, 180, 117, 0.451);
+margin: auto;
+padding: 1rem;
+box-sizing: border-box;
+border-radius: 20px;
+}
+.titleStyle{
+    margin: 0;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.dvrWrapper p{
+    margin: 0;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.imgStyle{
+width: 100%;
+height: 150px;
+object-fit: cover;
+margin-bottom: 10px;
+}

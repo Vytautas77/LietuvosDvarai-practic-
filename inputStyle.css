@@ -1,0 +1,27 @@
+.InputMain{
+    margin: auto;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+.btn{
+    margin-top: 2rem;
+    margin-left: auto;
+    width: 9rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: rgba(232, 180, 117, 0.596);
+    font-size: 1rem;
+}
+.btn:hover{
+    background-color: rgba(185, 131, 66, 0.853);
+}
