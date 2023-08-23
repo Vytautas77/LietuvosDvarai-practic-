@@ -7,12 +7,15 @@ const InputTitle = document.getElementById('InputTitle').value
 const inputHistory =document.getElementById('inputHistory').value
 const inputAddress=document.getElementById('inputAddress').value
 const inputImg=document.getElementById('inputImg').value
+const inputAllHistory=document.getElementById('inputAllHistory').value
+
 
 const inputDvaras={
     title: InputTitle ,
     history: inputHistory,
     address:  inputAddress,
-    image: inputImg
+    image: inputImg,
+    allHistory: inputAllHistory
 }
 try{
 
@@ -28,7 +31,7 @@ const data= await responce.json();
 
 if(data){
     const responseWrapper = document.getElementById('responseWrapper');
-    responseWrapper.innerHTML = 'Duomenys įvesti sekmingai.';
+    responseWrapper.innerHTML = 'Duomenys įvesti sėkmingai.';
 
     setTimeout(()=>{
         window.location.replace('./index.html')
@@ -37,6 +40,6 @@ if(data){
 }catch(err){
     console.log('err', err)
     const responseWrapper = document.getElementById('responseWrapper');
-    responseWrapper.innerHTML = 'Duomenys įvesti NESEKMINGAI.';
+    responseWrapper.innerHTML = 'Duomenys įvesti NESĖKMINGAI.';
 }
 })

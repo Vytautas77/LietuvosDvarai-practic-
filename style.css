@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    padding: 0;
 }
 header{
     width: auto;
@@ -10,6 +11,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 .logo{
     padding-left: 3rem;
@@ -41,7 +49,7 @@ header{
     background-color: rgba(232, 180, 117, 0.451);
 }
 .dvaruWrapper{
-    margin: 0.2rem 3rem;
+    margin: 7rem 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
@@ -58,6 +66,12 @@ margin: auto;
 padding: 1rem;
 box-sizing: border-box;
 border-radius: 20px;
+text-decoration: none;
+color: black;
+transition: 0.3s;
+}
+.dvrWrapper:hover{
+    scale: 1.03;
 }
 .titleStyle{
     margin: 0;
@@ -75,4 +89,63 @@ width: 100%;
 height: 150px;
 object-fit: cover;
 margin-bottom: 10px;
+}
+
+.infoBox{
+    margin-top: 7rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+.infoImg{
+    width: 60%;
+    height: 400px;
+}
+.texBox{
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.texBox p, h1{
+    margin: 0;
+}
+.wrapperBox{
+    margin: 1rem 3rem;
+    background-color: antiquewhite;
+}
+.imgInfo{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.delBtn{
+    margin-left: 4rem;
+    border: 1px solid black;
+    padding: 5px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgb(97, 64, 22);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.delBtn:hover{
+    background-color: rgb(23, 15, 5);
+}
+.deleteInfo{
+    margin-top: 1rem;
+    margin-left: 4rem;
+    color: red;
+    font-size: larger;
+    font-weight: 600;
+}
+.wrapperBox{
+    padding: 1rem;
+}
+.wrapperBox::first-letter{
+    padding-left: 1rem;
 }
