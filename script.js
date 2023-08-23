@@ -1,15 +1,17 @@
-console.log('dvarai')
-
 const fetchDvarai =async()=>{
 const response = await fetch('https://64e31d8abac46e480e783232.mockapi.io/dvaras');
 const dvarai = await response.json();
-console.log(dvarai);
 
 const dvaraiWrapper = document.getElementById('dvaruWrapper')
 
 dvarai.forEach((dvaras) => {
-    const wrapper = document.createElement('div');
-    wrapper.setAttribute('class', 'dvrWrapper')
+    const wrapper = document.createElement('a');
+    wrapper.setAttribute('class', 'dvrWrapper');
+    wrapper.href = './infoHtml.html';
+    wrapper.addEventListener('click', ()=>{
+        localStorage.setItem('DvaraiId', dvaras.id);  //nukeliama ID I Local Storage
+    });
+    
     const titleWrapper= document.createElement('H2');
     titleWrapper.setAttribute('class', 'titleStyle')
     titleWrapper.innerHTML=dvaras.title;
@@ -27,8 +29,6 @@ dvarai.forEach((dvaras) => {
     wrapper.append(addressWrapper);
 
     dvaraiWrapper.append(wrapper)
-
-    
 
 });
 }
